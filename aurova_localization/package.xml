@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
-<package format="2">
+<?xml-model
+   href="http://download.ros.org/schema/package_format3.xsd"
+   schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>aurova_localization</name>
   <version>1.0.0</version>
   <description>The aurova_localization package</description>
@@ -50,17 +53,16 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   
   <exec_depend>ekf_fusion</exec_depend>
-  <exec_depend>pose_simulation</exec_depend>
+  <!-- <exec_depend>pose_simulation</exec_depend>
   <exec_depend>get_pose_from_tf</exec_depend>
-  <exec_depend>gps_odom_optimization</exec_depend>
+  <exec_depend>gps_odom_optimization</exec_depend> -->
   <exec_depend>geo_localization</exec_depend>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
   
   <!-- The export tag contains other, unspecified, tags -->
   <export>
     <!-- Other tools can request additional information be placed here -->
-    <metapackage/>
   </export>
 
 </package>
